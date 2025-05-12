@@ -64,7 +64,7 @@ def show () :
     for show in inventory :
         print (show)    
     total= sum(map(lambda p :p["price"] * p["units"] , inventory))
-    print (f" Total : {total}")
+    print (f" Total : {total:.2f}")
 #the main menu is already printed the main message of the menu and the options to enter, it is inside a cycle so that as long as you do not enter the exit option it returns and is shown to continue modifying or adding things to the program.
 while True :
     try:
@@ -91,4 +91,4 @@ while True :
      else:
          print("\nenter a valid option  ( 1 - 6 )\n")
     except ValueError:
-        print(" Ingrese Una Opcion Valida ")
+        print(" Invalid data entered ")
